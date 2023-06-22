@@ -1,0 +1,145 @@
+@font-face {
+    font-family: marvel;
+    src: url('fonts/Marvel-Bold.ttf');
+}
+@font-face {
+    font-family: spider;
+    src: url('fonts/Aku&Kamu.otf');
+}
+@font-face {
+    font-family: miles;
+    src: url('fonts/Colors\ Of\ Autumn.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: #0c0a0a;
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav ul{
+    cursor: default;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #e6e6e9;
+    transition: all 0.2s;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    font-family: marvel;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+nav ul li a:hover{
+    color: #e61e1e;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 12%;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+.info h1{
+    font-size: 70px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+span{
+    color: #c70c0d;
+    font-family: miles;
+    text-shadow: 1px 2px 2px #000;
+}
+.s2{
+    color: #fff;
+    font-family: miles;
+    text-shadow: 1px 2px 2px #c70c0d;
+}
+.info p{
+    color: #e6e6e9;
+    line-height: 22px;
+    font-family: spider;
+    letter-spacing: 5px;
+}
+.info a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;  
+    transition: all 0.5s;  
+    cursor: pointer;
+    font-family: marvel;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.info a:hover{
+    background-color:#c70c0d;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.img-box:hover .back-img{
+    bottom: 50px;
+}
+.img-box:hover .main-img{
+    left: 52%;
+}
+.social-links{
+    margin-left: 8%;
+    margin-top: 80px;
+    cursor: default;
+}
+.social-links a{
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 20px;
+    transition: all 0.2s;  
+}
+.social-links .yt:hover {
+    color:#ff3410;
+}
+.social-links .xb:hover {
+    color:#1fb61f;
+}
+.social-links .ps:hover {
+    color:#057de6;
+}
